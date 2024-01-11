@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 7 - Vanilla Weather Project </title>
 </head>
 <body>
+    <div class="appBox">
+
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" class="search-input" placeholder="Enter a city..." required/>
+            <input type="submit" class="search-button" value="Search"/>
         </form>
+            </header>
         <main>
-<div>
+<div class="weather-data">
 
             <h1> Chicago</h1>
-<p>
+<p class="weather-details">
 Thursday 12:00, scattered clouds
 <br>
-Humidity: 50%, Wind: 3.13km/h
+Humidity: <strong>50%</strong>, Wind: <strong>3.13km/h</strong>
 </p>
 </div>
 
-<div>
+<div class="temperature-details">
+<span class="emoji">⛅</span>
+<span class="degrees">50</span>
+<span class="symbol">ºF</span>
 
- ⛅50ºF 
 </div>
 
 </main>
 
 
 
-    </header>
+
 
 
 
@@ -46,6 +56,7 @@ Humidity: 50%, Wind: 3.13km/h
     </small>
 
 </footer>
+    </div>
 
 
 
