@@ -15,15 +15,15 @@
     <div class="appBox">
 
     <header>
-        <form class="search-form">
-            <input type="search" class="search-input" placeholder="Enter a city..." required/>
-            <input type="submit" class="search-button" value="Search"/>
+        <form class="search-form" id="search-form">
+            <input type="search" class="search-input" id="search-form-input" placeholder="Enter a city..." required/>
+            <input type="submit" class="search-button" id="search-button" value="Search"/>
         </form>
             </header>
         <main>
 <div class="weather-data">
 
-            <h1> Chicago</h1>
+            <h1 class="weather-app-city" id="city"> Chicago</h1>
 <p class="weather-details">
 Thursday 12:00, scattered clouds
 <br>
@@ -59,6 +59,6 @@ Humidity: <strong>50%</strong>, Wind: <strong>3.13km/h</strong>
     </div>
 
 
-
+<script src="src/script.js"></script>
 </body>
 </html>
