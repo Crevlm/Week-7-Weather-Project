@@ -13,11 +13,11 @@ h1 {
 }
 
 strong {
-    color: #ACB1D6;
+    color: #8294C4;
 }
 
 a {
-    color: #8294C4
+    color: #8294C4;
 }
 
 body {
@@ -89,17 +89,17 @@ main {
     font-size: 70px;
     font-weight: bold;
 
- }
+}
 
 .emoji {
     font-size: 40px;
     margin-top: 20px;
- }
+}
 
 .symbol {
     margin-top: 18px;
     font-size: 20px;
- }
+}
 
 
 footer {
