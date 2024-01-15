@@ -76,9 +76,10 @@ main {
 
 .temperature {
     display: flex;
-    font-size: 50px;
+    font-size: 75px;
     margin-left: 20px;
     justify-content: right;
+    line-height: 1;
 }
 
 .temperature-details {
@@ -91,9 +92,10 @@ main {
 
 }
 
-.emoji {
-    font-size: 40px;
-    margin-top: 20px;
+.icon {
+    width: 88px;
+    height: 88px;
+    margin-top: 10px;
 }
 
 .symbol {
