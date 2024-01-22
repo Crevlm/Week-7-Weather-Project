@@ -35,6 +35,8 @@ minutes = `0${minutes}`;
 
   temperatureElement.innerHTML = Math.round(temperature);
  
+
+  getForecast(response.data.city);
 }
 
 
@@ -62,7 +64,29 @@ function handleSearchSubmit(event) {
 }
 searchCity("Jacksonville");
 
-  function displayForecast() {
+
+
+
+
+
+
+
+function getForecast(city) {
+  let apiKey = "23a97cd4bfcbff879400f60t20ao904e";
+  let apiUrl =
+    `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+
+
+    axios.get(apiUrl).then(displayForecast);
+  
+}
+
+
+  function displayForecast(response) {
+console.log(response.data);
+
+
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 let forecastHtml = "";
 
@@ -72,7 +96,7 @@ days.forEach(function(day) {
    <div class="weather-forecase-date">
             ${day}
             </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="50px" alt="">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="40px" alt="">
           <div class="weather-forecast-temperature">
             <span class="weather-forecast-high">18° </span> 
             <span class="weather-forecast-low">12° </span>
