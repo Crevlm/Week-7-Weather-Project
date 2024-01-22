@@ -114,7 +114,9 @@ footer {
 
 .weather-forecast {
     margin-top: 20px;
-    text-align: center;
+     text-align: center;
+
+
 }
 
 .weather-forecast-date {
@@ -129,3 +131,5 @@ footer {
 .weather-forecast-high {
     font-weight: bold;
 }
+
+

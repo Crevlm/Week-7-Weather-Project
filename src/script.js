@@ -52,9 +52,41 @@ function handleSearchSubmit(event) {
   console.log(searchInput.value);
 
   searchCity(searchInput.value);
+
+  let searchFormElement = document.querySelector("#search-form");
+  searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+   
+
+  
 }
-
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
-
 searchCity("Jacksonville");
+
+  function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+let forecastHtml = "";
+
+
+days.forEach(function(day) {
+   forecastHtml += `
+   <div class="weather-forecase-date">
+            ${day}
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="50px" alt="">
+          <div class="weather-forecast-temperature">
+            <span class="weather-forecast-high">18° </span> 
+            <span class="weather-forecast-low">12° </span>
+
+          </div>  
+        </div>
+`;
+  
+
+});
+  let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHtml;
+
+  }
+
+
+  displayForecast();
