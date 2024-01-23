@@ -1,15 +1,13 @@
-header {
+.header {
     border-bottom: 1px solid #DBDFEA;
     padding: 30px 0;
 }
-
 
 h1 {
     font-family: 'Varela Round', sans-serif;
     margin: 0;
     font-size: 38px;
     line-height: 48px;
-
 }
 
 strong {
@@ -23,7 +21,6 @@ a {
 body {
     background-color: #DBDFEA;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .appBox {
@@ -36,13 +33,12 @@ body {
 }
 
 .search-input {
-
     background-color: #DBDFEA;
     border: 0;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
-    width: 80%
+    width: 80%;
 }
 
 .search-button {
@@ -53,7 +49,6 @@ body {
     padding: 10px 15px;
     margin-left: 5px;
     font-size: 16px;
-
 }
 
 main {
@@ -71,7 +66,6 @@ main {
 .weather-details {
     font-size: 16px;
     line-height: 20px;
-
 }
 
 .temperature {
@@ -89,7 +83,6 @@ main {
 .degrees {
     font-size: 70px;
     font-weight: bold;
-
 }
 
 .icon {
@@ -103,7 +96,6 @@ main {
     font-size: 20px;
 }
 
-
 footer {
     border-top: 1px solid #DBDFEA;
     padding: 30px 0;
@@ -115,20 +107,32 @@ footer {
 .weather-forecast {
     margin-top: 20px;
     text-align: center;
-  
-
+    display: flex;
+    justify-content: space-around;
 
 }
 
 .weather-forecast-date {
     font-size: 16px;
-    color: #8294C4
+    color: #8294C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
 }
 
 .weather-forecast-temperature {
     font-size: 13px;
+    margin-top: 5px;
 }
 
-.weather-forecast-high {
-    font-weight: bold;
-}
+    .weather-forecast-high {
+        font-weight: bold;
+    }
+
+    .weather-forecast-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }

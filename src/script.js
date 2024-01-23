@@ -93,7 +93,7 @@ let forecastHtml = "";
 
 days.forEach(function(day) {
    forecastHtml += `
-   <div class="weather-forecase-date">
+   <div class="weather-forecast-date">
             ${day}
             </div>
             <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="40px" alt="">
