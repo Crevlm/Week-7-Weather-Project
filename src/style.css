@@ -96,13 +96,7 @@ main {
     font-size: 20px;
 }
 
-footer {
-    border-top: 1px solid #DBDFEA;
-    padding: 30px 0;
-    text-align: center;
-    font-size: small;
-    color: rgba(0, 0, 0, 0.3);
-}
+
 
 .weather-forecast {
     margin-top: 20px;
@@ -127,12 +121,20 @@ footer {
     margin-top: 5px;
 }
 
-    .weather-forecast-high {
-        font-weight: bold;
-    }
+.weather-forecast-high {
+    font-weight: bold;
+}
 
-    .weather-forecast-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.weather-forecast-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    border-top: 1px solid #DBDFEA;
+    padding: 30px 0;
+    text-align: center;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.3);
+}
